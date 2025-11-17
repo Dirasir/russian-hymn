@@ -1,0 +1,41 @@
+{
+  "name": "russian-hymn",
+  "displayName": "Russian Hymn Player",
+  "description": "Plays Russian hymn on key press",
+  "version": "1.0.0",
+  "publisher": "dirasir",
+  "engines": {
+    "vscode": "^1.106.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:russian-hymn.playHymn"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "russian-hymn.playHymn",
+        "title": "Play Russian Hymn"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "russian-hymn.playHymn",
+        "key": "ctrl+shift+z ctrl+shift+v",
+        "mac": "cmd+shift+z cmd+shift+v"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.106.0",
+    "typescript": "^5.9.3"
+  }
+}

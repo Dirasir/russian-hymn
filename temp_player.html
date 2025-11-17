@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Russian Hymn</title>
+    <style>
+        body { 
+            margin: 0; 
+            padding: 20px; 
+            background: #1e1e1e; 
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        audio { 
+            width: 400px; 
+            margin: 20px 0; 
+        }
+    </style>
+</head>
+<body>
+    <h2>Russian Hymn Player</h2>
+    <audio controls autoplay loop>
+        <source src="file:///c:/project_vs_code/irspo_lab/plugin_Russian_hymn/russian-hymn/sounds/hymn.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <p>Audio is playing...</p>
+    <script>
+        // Автоматически воспроизводим
+        const audio = document.querySelector('audio');
+        audio.play().catch(e => console.log('Autoplay blocked:', e));
+    </script>
+</body>
+</html>

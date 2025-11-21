@@ -11,6 +11,6 @@
 - void
 
 **Пример вызова:**
+Автоматически вызывается VS Code при нажатии ctrl+shift+z ctrl+shift+v
 ```typescript
-// Автоматически вызывается VS Code при нажатии ctrl+shift+z ctrl+shift+v
 activate(context);

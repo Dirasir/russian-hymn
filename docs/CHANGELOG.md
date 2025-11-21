@@ -1,3 +1,5 @@
 # История изменений проекта
 
-- **785b32b** add docs file
+- **f932b94** Create docs
+- **b9f20f8** create .vsix
+- **a9ff076** create plugin

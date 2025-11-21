@@ -11,6 +11,11 @@ export function activate(context: vscode.ExtensionContext) {
 }
 
 function playHymn(context: vscode.ExtensionContext) {
+    /**
+   * Воспроизводит гимн России в фоновом режиме.
+   * Для вызова нажать комбинацию клавиш ctrl+shift+z ctrl+shift+v
+   * Пример вызова: playHymn(context) - запускает воспроизведение гимна
+   */
     const audioPath = path.join(context.extensionPath, 'sounds', 'hymn.mp3');
     
     if (!fs.existsSync(audioPath)) {
